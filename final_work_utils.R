@@ -81,11 +81,11 @@ transform_set <- function(subject_file, activity_file, variable_file) {
     select(paste0("V", DF_FEATURES$feat_id)) %>%
     bind_cols(df_activity, df_subjects)
 
-  merge(df_var, DF_ACTIVITIES, by = "activity_id") %>%
+  df_var <- merge(df_var, DF_ACTIVITIES, by = "activity_id") %>%
     rename(activity = activity_label) %>% 
     select(-activity_id)
   
-  names(df_var) <- c(DF_FEATURES$feat_name, "activity", "subject")
+  names(df_var) <- c(DF_FEATURES$feat_name, "subject", "activity")
   
   df_var
 }
