@@ -1,10 +1,26 @@
 GetAndCleanFinalWork CodeBook
 =============================
 
+The purpose of this project is to to build two datasets extracted from the analysis 
+["Human Activity Recognition Using 
+Smartphones Dataset"](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  
 
+## FIRST DATASET
+In this table, 68 columns are described :  
 
+* 66 features corresponding to the means and standard deviation measurements of **XXXXXXXXX**  
+* 1 column describing the id of the subject for that measurement  
+* 1 column describing the activity the activity of the subject during the measurement  
 
-| Column number   | Name                      | Feature                     | Orig. col. nbr |
+### Table 1 : columns 1 to 66
+The table is oragnized :  
+
+* Column number : the number of the column in the dataset  
+* Column Name : the name of the column in the dataset  
+* Feature : the corresponding feature in the measurement  
+* Orig. col. nbr : the column number in the original measurement datasets  
+
+| Column number   | Column Name               | Feature                     | Orig. col. nbr |
 |:---------------:|:--------------------------|:----------------------------|:--------------:|
 | 1               | tbodyacc-mean-x           | tBodyAcc-mean()-X           | 1              |
 | 2               | tbodyacc-mean-y           | tBodyAcc-mean()-Y           | 2              |
@@ -72,6 +88,27 @@ GetAndCleanFinalWork CodeBook
 | 64              | fbodybodygyromag-std      | fBodyBodyGyroMag-std()      | 530            |
 | 65              | fbodybodygyrojerkmag-mean | fBodyBodyGyroJerkMag-mean() | 542            |
 | 66              | fbodybodygyrojerkmag-std  | fBodyBodyGyroJerkMag-std()  | 543            |
-| 67 | activity |    $1 |
-| 68 | subject |    $1 |
 
+### Table 2 : column 67
+The table is oragnized :  
+
+* Column number : the number of the column in the dataset  
+* Column Name : the name of the column in the dataset  
+* Description : the description of the feature  
+
+| Column number   | Column Name               | Description                                  |
+|:---------------:|:--------------------------|:---------------------------------------------|
+| 68              | subject                   | The id of the subject for the measurement    |
+
+### Table 3 : column 68
+The table is oragnized :  
+
+* Column number : the number of the column in the dataset  
+* Column Name : the name of the column in the dataset  
+* Description : the description of the feature  
+
+| Column number   | Column Name               | Description                                  |
+|:---------------:|:--------------------------|:---------------------------------------------|
+| 67              | activity                  | The name of the activity for the measurement |
+
+## SECOND DATASET
