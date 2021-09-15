@@ -41,6 +41,6 @@ df_measurements_means <- df_measurements %>% group_by(activity, subject) %>% sum
 #   - means_by_activity_subject.csv
 #-------------------------------------------------------------------------------
 write.csv(df_measurements, "data/results/measurements.csv")
-write.csv(df_measurements, "data/results/means_by_activity_subject.csv")
+write.csv(df_measurements_means, "data/results/means_by_activity_subject.csv")
 
 
