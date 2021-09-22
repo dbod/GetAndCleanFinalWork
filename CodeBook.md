@@ -5,6 +5,65 @@ The purpose of this project is to to build two datasets extracted from the analy
 ["Human Activity Recognition Using 
 Smartphones Dataset"](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  
 
+________________________________________________________________________________
+## The imported data
+Imported data are saved in the project in :
+* data/external/HumanActivityRecognitionUsingSmartphones.zip
+
+After unzipping this file under data/external, explanations about the HAR project 
+and its data are described in :
+* data/external/UCI HAR Dataset/README.txt : the HAR project and how are organized the data
+* data/external/UCI HAR Dataset/features_info.txt : the different available measurements
+
+The HAR data used for the project are :
+* data/external/UCI HAR Dataset/activity_labels.txt : the list of the 6 different 
+activities used during the experiments
+* data/external/UCI HAR Dataset/features.txt : the list of all the features mezsured 
+during an experiment. For each feature, the corresponding column number in the 
+measurements datasets is given
+* data/external/UCI HAR Dataset/test/X_test.txt : the list of the features for the 
+experiments. Each row corresponds to an experiment
+* data/external/UCI HAR Dataset/test/y_test.txt : the list of the activities for 
+the experiments. each row gives the id of activity and corresponds to a row in the 
+X_test.txt
+* data/external/UCI HAR Dataset/train/subject_test.txt : the list of the subject doing
+the exepriment. Each row correponds to a row of X_test.txt
+* data/external/UCI HAR Dataset/train/X_train.txt : the list of the features for the 
+experiments. Each row corresponds to an experiment
+* data/external/UCI HAR Dataset/train/y_train.txt : the list of the activities for 
+the experiments. each row gives the id of activity and corresponds to a row in the 
+X_train.txt
+* data/external/UCI HAR Dataset/test/subject_train.txt : the list of the subject doing
+the experiment. Each row correponds to a row of X_train.txt
+
+The train and test directories have also an "Inertial Signals" sub directory containing
+more measurments, but they are out of the scope of the project since they don't 
+contain mean and std values.
+
+________________________________________________________________________________
+## The processed data
+
+________________________________________________________________________________
+## First Dataset - measurements.csv
+
+# Building the data
+
+# Description of the data
+
+________________________________________________________________________________
+## Second Dataset - means_by_activity_subject.csv
+
+
+# Building the data
+
+# Description of the data
+
+________________________________________________________________________________
+
+
+
+
+
 ## FIRST DATASET
 In this table, 68 columns are described :  
 

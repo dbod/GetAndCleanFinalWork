@@ -7,7 +7,7 @@ JHU course on coursera.
 The purpose of this project is to create two clean dataset from measurements described
 in ["Human Activity Recognition Using 
 Smartphones Dataset"](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
-
+________________________________________________________________________________
 ## Installation
 
 Unzip **data/external/HumanActivityRecognitionUsingSmartphones.zip**, directly in the 
@@ -22,6 +22,7 @@ organized the data
 * data/external/UCI HAR Dataset/features_info.txt describes the different available 
 measurements
 
+________________________________________________________________________________
 ## Usage
 
 To start the project, simply execute **run_analysis.R**. This script will create two 
@@ -31,6 +32,7 @@ cleaned datasets in **data/results/** :
 
 Those two resulting files are described in **CodeBook.md**.
 
+________________________________________________________________________________
 ## Development
 
 ### Structure of the project
@@ -76,8 +78,6 @@ script (run_analysis.R) to build a cleaned datafarme from three files :
 the user for the corresponding row in X_???.txt  
 * y_???.txt (??? being "test" or "train") : each row describes the id the activity 
 for the corresponding row in X_???.txt  
-
-
 
 ________________________________________________________________________________
 
