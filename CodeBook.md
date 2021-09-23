@@ -43,6 +43,40 @@ contain mean and std values.
 ________________________________________________________________________________
 ## The processed data
 
+### The measurements dataframe
+The features columns are described in "features.txt". Those data are processed 
+into a clean dataframe, with only the columns of interests for the project, and 
+with a proper name for each column :  
+1. the columns are renamed in feat_id (the column number) and feat_name (the feature name)  
+2. the columns are filtered : only the feature with a name containg "-mean()" or 
+"-std()" are kept  
+3. the "()" at the end of the column's name is removed  
+4. the column's names are lowered  
+
+The activities are described in "activity_labels.txt". Those data are processed into
+a clean daframe. The columns of this dataframe are renamed in "activity_id" and 
+"activity_label".  
+
+The measurements are splitted in two different places : test and train. each of them 
+are processed to give two cleaned dataframes :  
+1. The features are filtered using the dataframe containing the features description  
+2. The activities described in "y_test.txt" (or y_train.txt) are added to the measurements  
+3. The subjects described in "subject_test.txt" (or subject_train.txt) are added 
+to the measurements  
+4. This new dataframe is merged with the "activity labels dataframe" previously 
+processed  
+5. The column "activity_id"" is removed  
+6. the column "activity_label" is renamed in "activity"  
+7. the column describing the suject is renamed in "subject"  
+8. the measurement's columns are renamed with their proper name found in the 
+feature dataframe  
+
+Finally the test and train dtaframes are row binded to get the final measurements 
+dataframe, saved in "data/results/measurements.csv".
+
+### The mean by activity and subject dataframe
+
+
 ________________________________________________________________________________
 ## First Dataset - measurements.csv
 
