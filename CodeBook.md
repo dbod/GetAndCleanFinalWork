@@ -57,7 +57,7 @@ The activities are described in "activity_labels.txt". Those data are processed 
 a clean daframe. The columns of this dataframe are renamed in "activity_id" and 
 "activity_label".  
 
-The measurements are splitted in two different places : test and train. each of them 
+The measurements are split in two different places : test and train. each of them 
 are processed to give two cleaned dataframes :  
 1. The features are filtered using the dataframe containing the features description  
 2. The activities described in "y_test.txt" (or y_train.txt) are added to the measurements  
@@ -71,43 +71,20 @@ processed
 8. the measurement's columns are renamed with their proper name found in the 
 feature dataframe  
 
-Finally the test and train dtaframes are row binded to get the final measurements 
+Finally the test and train dataframes are row binded to get the final measurements 
 dataframe, saved in "data/results/measurements.csv".
 
 ### The mean by activity and subject dataframe
+The measurements dataframe previously built is used to process the mean by activity
+and subject dataframe. A groupby is done by activity and subject, and a summary using 
+mean method is applied.
 
-
-________________________________________________________________________________
-## First Dataset - measurements.csv
-
-# Building the data
-
-# Description of the data
+The mean by activity and subject dataframe is saved in "data/results/means_by_activity_subject.csv".
 
 ________________________________________________________________________________
-## Second Dataset - means_by_activity_subject.csv
-
-
-# Building the data
-
-# Description of the data
-
-________________________________________________________________________________
-
-
-
-
-
-## FIRST DATASET
-In this table, 68 columns are described :  
-
-* 66 features corresponding to the means and standard deviation measurements of **XXXXXXXXX**  
-* 1 column describing the id of the subject for that measurement  
-* 1 column describing the activity the activity of the subject during the measurement  
-
-### Table 1 : columns 1 to 66
-The table is oragnized :  
-
+## Description of the data - measurements.csv
+### Columns 1 to 66
+The table is organized :  
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Feature : the corresponding feature in the measurement  
@@ -182,9 +159,8 @@ The table is oragnized :
 | 65              | fbodybodygyrojerkmag-mean | fBodyBodyGyroJerkMag-mean() | 542            |
 | 66              | fbodybodygyrojerkmag-std  | fBodyBodyGyroJerkMag-std()  | 543            |
 
-### Table 2 : column 67
+### Column 67
 The table is oragnized :  
-
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Description : the description of the feature  
@@ -193,9 +169,8 @@ The table is oragnized :
 |:---------------:|:--------------------------|:---------------------------------------------|
 | 68              | subject                   | The id of the subject for the measurement    |
 
-### Table 3 : column 68
+### Column 68
 The table is oragnized :  
-
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Description : the description of the feature  
@@ -204,4 +179,9 @@ The table is oragnized :
 |:---------------:|:--------------------------|:---------------------------------------------|
 | 67              | activity                  | The name of the activity for the measurement |
 
-## SECOND DATASET
+________________________________________________________________________________
+## Description of the data - means_by_activity_subject.csv
+
+
+________________________________________________________________________________
+
