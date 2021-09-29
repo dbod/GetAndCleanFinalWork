@@ -160,7 +160,7 @@ The table is organized :
 | 66              | fbodybodygyrojerkmag-std  | fBodyBodyGyroJerkMag-std()  | 543            |
 
 ### Column 67
-The table is oragnized :  
+The table is organized :  
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Description : the description of the feature  
@@ -170,7 +170,7 @@ The table is oragnized :
 | 68              | subject                   | The id of the subject for the measurement    |
 
 ### Column 68
-The table is oragnized :  
+The table is organized :  
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Description : the description of the feature  
@@ -181,7 +181,100 @@ The table is oragnized :
 
 ________________________________________________________________________________
 ## Description of the data - means_by_activity_subject.csv
+### Column 1
+The table is organized :  
+* Column number : the number of the column in the dataset  
+* Column Name : the name of the column in the dataset  
+* Description : the description of the feature  
 
+| Column number   | Column Name               | Description                                  |
+|:---------------:|:--------------------------|:---------------------------------------------|
+| 1               | activity                  | The name of the activity for the measurement |
+
+### Column 2
+The table is organized :  
+* Column number : the number of the column in the dataset  
+* Column Name : the name of the column in the dataset  
+* Description : the description of the feature  
+
+| Column number   | Column Name               | Description                                  |
+|:---------------:|:--------------------------|:---------------------------------------------|
+| 2               | subject                   | The id of the subject for the measurement    |
+
+### Columns 3 to 68
+The table is organized :  
+* Column number : the number of the column in the dataset  
+* Column Name : the name of the column in the dataset  
+* Feature : the corresponding feature in the measurement  
+
+| Column number   | Column Name               | Feature                             |
+|:---------------:|:--------------------------|:------------------------------------|
+| 3               | tbodyacc-mean-x           | mean of tBodyAcc-mean()-X           |
+| 4               | tbodyacc-mean-y           | mean of tBodyAcc-mean()-Y           |
+| 5               | tbodyacc-mean-z           | mean of tBodyAcc-mean()-Z           |
+| 6               | tbodyacc-std-x            | mean of tBodyAcc-std()-X            |
+| 7               | tbodyacc-std-y            | mean of tBodyAcc-std()-Y            |
+| 8               | tbodyacc-std-z            | mean of tBodyAcc-std()-Z            |
+| 9               | tgravityacc-mean-x        | mean of tGravityAcc-mean()-X        |
+| 10              | tgravityacc-mean-y        | mean of tGravityAcc-mean()-Y        |
+| 11              | tgravityacc-mean-z        | mean of tGravityAcc-mean()-X        |
+| 12              | tgravityacc-std-x         | mean of tGravityAcc-std()-X         |
+| 13              | tgravityacc-std-y         | mean of tGravityAcc-std()-Y         |
+| 14              | tgravityacc-std-z         | mean of tGravityAcc-std()-Z         |
+| 15              | tbodyaccjerk-mean-x       | mean of tBodyAccJerk-mean()-X       |
+| 16              | tbodyaccjerk-mean-y       | mean of tBodyAccJerk-mean()-Y       |
+| 17              | tbodyaccjerk-mean-z       | mean of tBodyAccJerk-mean()-Z       |
+| 18              | tbodyaccjerk-std-x        | mean of tBodyAccJerk-std()-X        |
+| 19              | tbodyaccjerk-std-y        | mean of tBodyAccJerk-std()-Y        |
+| 20              | tbodyaccjerk-std-z        | mean of tBodyAccJerk-std()-Z        |
+| 21              | tbodygyro-mean-x          | mean of tBodyGyro-mean()-X          |
+| 22              | tbodygyro-mean-y          | mean of tBodyGyro-mean()-Y          |
+| 23              | tbodygyro-mean-z          | mean of tBodyGyro-mean()-Z          |
+| 24              | tbodygyro-std-x           | mean of tBodyGyro-std()-X           |
+| 25              | tbodygyro-std-y           | mean of tBodyGyro-std()-Y           |
+| 26              | tbodygyro-std-z           | mean of tBodyGyro-std()-Z           |
+| 27              | tbodygyrojerk-mean-x      | mean of tBodyGyroJerk-mean()-X      |
+| 28              | tbodygyrojerk-mean-y      | mean of tBodyGyroJerk-mean()-Y      |
+| 29              | tbodygyrojerk-mean-z      | mean of tBodyGyroJerk-mean()-Z      |
+| 30              | tbodygyrojerk-std-x       | mean of tBodyGyroJerk-std()-X       |
+| 31              | tbodygyrojerk-std-y       | mean of tBodyGyroJerk-std()-Y       |
+| 32              | tbodygyrojerk-std-z       | mean of tBodyGyroJerk-std()-Z       |
+| 33              | tbodyaccmag-mean          | mean of tBodyAccMag-mean()          |
+| 34              | tbodyaccmag-std           | mean of tBodyAccMag-std()           |
+| 35              | tgravityaccmag-mean       | mean of tGravityAccMag-mean()       |
+| 36              | tgravityaccmag-std        | mean of tGravityAccMag-std()        |
+| 37              | tbodyaccjerkmag-mean      | mean of tBodyAccJerkMag-mean()      |
+| 38              | tbodyaccjerkmag-std       | mean of tBodyAccJerkMag-std()       |
+| 39              | tbodygyromag-mean         | mean of tBodyGyroMag-mean()         |
+| 40              | tbodygyromag-std          | mean of tBodyGyroMag-std()          |
+| 41              | tbodygyrojerkmag-mean     | mean of tBodyGyroJerkMag-mean()     |
+| 42              | tbodygyrojerkmag-std      | mean of tBodyGyroJerkMag-std()      |
+| 43              | fbodyacc-mean-x           | mean of fBodyAcc-mean()-X           |
+| 44              | fbodyacc-mean-y           | mean of fBodyAcc-mean()-Y           |
+| 45              | fbodyacc-mean-z           | mean of fBodyAcc-mean()-Z           |
+| 46              | fbodyacc-std-x            | mean of fBodyAcc-std()-X            |
+| 47              | fbodyacc-std-y            | mean of fBodyAcc-std()-Y            |
+| 48              | fbodyacc-std-z            | mean of fBodyAcc-std()-Z            |
+| 49              | fbodyaccjerk-mean-x       | mean of fBodyAccJerk-mean()-X       |
+| 50              | fbodyaccjerk-mean-y       | mean of fBodyAccJerk-mean()-Y       |
+| 51              | fbodyaccjerk-mean-z       | mean of fBodyAccJerk-mean()-Z       |
+| 52              | fbodyaccjerk-std-x        | mean of fBodyAccJerk-std()-X        |
+| 53              | fbodyaccjerk-std-y        | mean of fBodyAccJerk-std()-Y        |
+| 54              | fbodyaccjerk-std-z        | mean of fBodyAccJerk-std()-Z        |
+| 55              | fbodygyro-mean-x          | mean of fBodyGyro-mean()-X          |
+| 56              | fbodygyro-mean-y          | mean of fBodyGyro-mean()-Y          |
+| 57              | fbodygyro-mean-z          | mean of fBodyGyro-mean()-Z          |
+| 58              | fbodygyro-std-x           | mean of fBodyGyro-std()-X           |
+| 59              | fbodygyro-std-y           | mean of fBodyGyro-std()-Y           |
+| 60              | fbodygyro-std-z           | mean of fBodyGyro-std()-Z           |
+| 61              | fbodyaccmag-mean          | mean of fBodyAccMag-mean()          |
+| 62              | fbodyaccmag-std           | mean of fBodyAccMag-std()           |
+| 63              | fbodybodyaccjerkmag-mean  | mean of fBodyBodyAccJerkMag-mean()  |
+| 64              | fbodybodyaccjerkmag-std   | mean of fBodyBodyAccJerkMag-std()   |
+| 65              | fbodybodygyromag-mean     | mean of fBodyBodyGyroMag-mean()     |
+| 66              | fbodybodygyromag-std      | mean of fBodyBodyGyroMag-std()      |
+| 67              | fbodybodygyrojerkmag-mean | mean of fBodyBodyGyroJerkMag-mean() |
+| 68              | fbodybodygyrojerkmag-std  | mean of fBodyBodyGyroJerkMag-std()  |
 
 ________________________________________________________________________________
 
