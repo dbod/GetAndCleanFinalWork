@@ -216,7 +216,7 @@ pre code {
 6. the column “activity_label” is renamed in “activity”<br />
 7. the column describing the suject is renamed in “subject”<br />
 8. the measurement’s columns are renamed with their proper name found in the feature dataframe</p>
-<p>Finally the test and train dataframes are row binded to get the final measurements dataframe, saved in <code>data/results/measurements.csv</code>.</p>
+<p>Finally the test and train dataframes are row bound and eventual rows with NA values are removed, so we get the final measurements dataframe, saved in <code>data/results/measurements.csv</code>.</p>
 </div>
 <div id="the-mean-by-activity-and-subject-dataframe" class="section level3">
 <h3>The mean by activity and subject dataframe</h3>

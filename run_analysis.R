@@ -1,4 +1,5 @@
 library(dplyr)
+library(tidyr)
 source("final_work_utils.R")
 
 #-------------------------------------------------------------------------------
@@ -25,7 +26,7 @@ df_train <- transform_set("data/external/UCI HAR Dataset/train/subject_train.txt
 #
 # df_train and df_test are removed from the environment after the merge.
 #-------------------------------------------------------------------------------
-df_measurements <- df_train %>% bind_rows(df_test)
+df_measurements <- df_train %>% bind_rows(df_test) %>% drop_na()
 rm(list = c("df_test", "df_train"))
 
 
@@ -40,7 +41,7 @@ df_measurements_means <- df_measurements %>% group_by(activity, subject) %>% sum
 #   - measurements.csv
 #   - means_by_activity_subject.csv
 #-------------------------------------------------------------------------------
-write.csv(df_measurements, "data/results/measurements.csv")
-write.csv(df_measurements_means, "data/results/means_by_activity_subject.csv")
+write.csv(df_measurements, "data/results/measurements.csv", row.names = FALSE)
+write.csv(df_measurements_means, "data/results/means_by_activity_subject.csv", row.names = FALSE)
 
 

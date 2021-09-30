@@ -75,8 +75,8 @@ processed
 8. the measurement's columns are renamed with their proper name found in the 
 feature dataframe  
 
-Finally the test and train dataframes are row binded to get the final measurements 
-dataframe, saved in `data/results/measurements.csv`.
+Finally the test and train dataframes are row bound and eventual rows with NA values 
+are removed, so we get the final measurements dataframe, saved in `data/results/measurements.csv`.
 
 ### The mean by activity and subject dataframe
 The measurements dataframe previously built is used to process the mean by activity
