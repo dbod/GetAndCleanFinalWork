@@ -7,36 +7,40 @@ Smartphones Dataset"](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Reco
 
 ________________________________________________________________________________
 ## The imported data
-Imported data are saved in the project in :
-* data/external/HumanActivityRecognitionUsingSmartphones.zip
+Imported raw data are saved in the archive file :
 
-After unzipping this file under data/external, explanations about the HAR project 
-and its data are described in :
-* data/external/UCI HAR Dataset/README.txt : the HAR project and how are organized the data
-* data/external/UCI HAR Dataset/features_info.txt : the different available measurements
+* `data/external/HumanActivityRecognitionUsingSmartphones.zip`
 
-The HAR data used for the project are :
-* data/external/UCI HAR Dataset/activity_labels.txt : the list of the 6 different 
+This file must be unzipped in `data/external`. Then the raw data are in `data/external/UCI HAR Dataset`.
+
+The raw data of the HAR project are described in :
+
+* `data/external/UCI HAR Dataset/README.txt` : the HAR project and how are organized the data
+* `data/external/UCI HAR Dataset/features_info.txt` : the different available measurements
+
+For our studies, we use those HAR data :
+
+* `data/external/UCI HAR Dataset/activity_labels.txt` : the list of the 6 different 
 activities used during the experiments
-* data/external/UCI HAR Dataset/features.txt : the list of all the features mezsured 
+* `data/external/UCI HAR Dataset/features.txt` : the list of all the features mezsured 
 during an experiment. For each feature, the corresponding column number in the 
 measurements datasets is given
-* data/external/UCI HAR Dataset/test/X_test.txt : the list of the features for the 
+* `data/external/UCI HAR Dataset/test/X_test.txt` : the list of the features for the 
 experiments. Each row corresponds to an experiment
-* data/external/UCI HAR Dataset/test/y_test.txt : the list of the activities for 
+* `data/external/UCI HAR Dataset/test/y_test.txt` : the list of the activities for 
 the experiments. each row gives the id of activity and corresponds to a row in the 
-X_test.txt
-* data/external/UCI HAR Dataset/train/subject_test.txt : the list of the subject doing
-the exepriment. Each row correponds to a row of X_test.txt
-* data/external/UCI HAR Dataset/train/X_train.txt : the list of the features for the 
+`X_test.txt`
+* `data/external/UCI HAR Dataset/train/subject_test.txt` : the list of the subject doing
+the exepriment. Each row correponds to a row of `X_test.txt`
+* `data/external/UCI HAR Dataset/train/X_train.txt` : the list of the features for the 
 experiments. Each row corresponds to an experiment
-* data/external/UCI HAR Dataset/train/y_train.txt : the list of the activities for 
+* `data/external/UCI HAR Dataset/train/y_train.txt` : the list of the activities for 
 the experiments. each row gives the id of activity and corresponds to a row in the 
-X_train.txt
-* data/external/UCI HAR Dataset/test/subject_train.txt : the list of the subject doing
-the experiment. Each row correponds to a row of X_train.txt
+`X_train.txt`
+* `data/external/UCI HAR Dataset/test/subject_train.txt` : the list of the subject doing
+the experiment. Each row correponds to a row of `X_train.txt`
 
-The train and test directories have also an "Inertial Signals" sub directory containing
+The train and test directories have also an `Inertial Signals` sub directory containing
 more measurments, but they are out of the scope of the project since they don't 
 contain mean and std values.
 
@@ -44,7 +48,7 @@ ________________________________________________________________________________
 ## The processed data
 
 ### The measurements dataframe
-The features columns are described in "features.txt". Those data are processed 
+The features columns are described in `features.txt`. Those data are processed 
 into a clean dataframe, with only the columns of interests for the project, and 
 with a proper name for each column :  
 1. the columns are renamed in feat_id (the column number) and feat_name (the feature name)  
@@ -53,38 +57,39 @@ with a proper name for each column :
 3. the "()" at the end of the column's name is removed  
 4. the column's names are lowered  
 
-The activities are described in "activity_labels.txt". Those data are processed into
+The activities are described in `activity_labels.txt`. Those data are processed into
 a clean daframe. The columns of this dataframe are renamed in "activity_id" and 
 "activity_label".  
 
 The measurements are split in two different places : test and train. each of them 
 are processed to give two cleaned dataframes :  
 1. The features are filtered using the dataframe containing the features description  
-2. The activities described in "y_test.txt" (or y_train.txt) are added to the measurements  
-3. The subjects described in "subject_test.txt" (or subject_train.txt) are added 
+2. The activities described in `y_test.txt` (or `y_train.txt`) are added to the measurements  
+3. The subjects described in `subject_test.txt` (or `subject_train.txt`) are added 
 to the measurements  
 4. This new dataframe is merged with the "activity labels dataframe" previously 
 processed  
-5. The column "activity_id"" is removed  
+5. The column "activity_id" is removed  
 6. the column "activity_label" is renamed in "activity"  
 7. the column describing the suject is renamed in "subject"  
 8. the measurement's columns are renamed with their proper name found in the 
 feature dataframe  
 
 Finally the test and train dataframes are row binded to get the final measurements 
-dataframe, saved in "data/results/measurements.csv".
+dataframe, saved in `data/results/measurements.csv`.
 
 ### The mean by activity and subject dataframe
 The measurements dataframe previously built is used to process the mean by activity
 and subject dataframe. A groupby is done by activity and subject, and a summary using 
 mean method is applied.
 
-The mean by activity and subject dataframe is saved in "data/results/means_by_activity_subject.csv".
+The mean by activity and subject dataframe is saved in `data/results/means_by_activity_subject.csv`.
 
 ________________________________________________________________________________
 ## Description of the data - measurements.csv
 ### Columns 1 to 66
-The table is organized :  
+The table is organized :
+
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Feature : the corresponding feature in the measurement  
@@ -160,7 +165,8 @@ The table is organized :
 | 66              | fbodybodygyrojerkmag-std  | fBodyBodyGyroJerkMag-std()  | 543            |
 
 ### Column 67
-The table is organized :  
+The table is organized :
+
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Description : the description of the feature  
@@ -170,7 +176,8 @@ The table is organized :
 | 68              | subject                   | The id of the subject for the measurement    |
 
 ### Column 68
-The table is organized :  
+The table is organized :
+
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Description : the description of the feature  
@@ -182,7 +189,8 @@ The table is organized :
 ________________________________________________________________________________
 ## Description of the data - means_by_activity_subject.csv
 ### Column 1
-The table is organized :  
+The table is organized :
+
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Description : the description of the feature  
@@ -192,7 +200,8 @@ The table is organized :
 | 1               | activity                  | The name of the activity for the measurement |
 
 ### Column 2
-The table is organized :  
+The table is organized :
+
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Description : the description of the feature  
@@ -202,7 +211,8 @@ The table is organized :
 | 2               | subject                   | The id of the subject for the measurement    |
 
 ### Columns 3 to 68
-The table is organized :  
+The table is organized :
+
 * Column number : the number of the column in the dataset  
 * Column Name : the name of the column in the dataset  
 * Feature : the corresponding feature in the measurement  
