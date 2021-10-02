@@ -76,14 +76,14 @@ processed
 feature dataframe  
 
 Finally the test and train dataframes are row bound and eventual rows with NA values 
-are removed, so we get the final measurements dataframe, saved in `data/results/measurements.csv`.
+are removed, so we get the final measurements dataframe, saved in `data/results/measurements.txt`.
 
 ### The mean by activity and subject dataframe
 The measurements dataframe previously built is used to process the mean by activity
 and subject dataframe. A groupby is done by activity and subject, and a summary using 
 mean method is applied.
 
-The mean by activity and subject dataframe is saved in `data/results/means_by_activity_subject.csv`.
+The mean by activity and subject dataframe is saved in `data/results/means_by_activity_subject.txt`.
 
 ________________________________________________________________________________
 ## Description of the data - measurements.csv

@@ -30,8 +30,8 @@ ________________________________________________________________________________
 To start the project, simply execute `run_analysis.R`. This script will create two 
 cleaned datasets in `data/results/` :
 
-* `measurements.csv`
-* `means_by_activity_subject.csv`
+* `measurements.txt`
+* `means_by_activity_subject.txt`
 
 Those two resulting files are described in `CodeBook.md`.
 
